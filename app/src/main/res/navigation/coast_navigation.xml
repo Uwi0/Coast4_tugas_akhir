@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coast_navigation"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.kakapo.coast.features.login.presentation.LoginFragment"
+        android:label="login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.kakapo.coast.features.register.presentation.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.kakapo.coast.features.dashboard.presentation.DashboardFragment"
+        android:label="dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.kakapo.coast.features.search.presentation.SearchFragment"
+        android:label="search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.kakapo.coast.features.setting.presentation.SettingFragment"
+        android:label="setting"
+        tools:layout="@layout/fragment_setting" />
+
+
+</navigation>
